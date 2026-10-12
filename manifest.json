@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Tradutor Bilíngue — Aprenda Lendo",
+  "version": "1.4.0",
+  "description": "Mantém o original e acrescenta a tradução abaixo de cada trecho.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tradutor Bilíngue"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ]
+}
